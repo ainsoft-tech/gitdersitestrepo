@@ -5,3 +5,10 @@ git config --global user.name "Ali Ihsan Naslı"
 git config user.email
 git config user.name
 git config 'https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Setup-and-Config
+git status = güncel git durumunu gösterir.
+git init = git projeyi başlatmak için
+git add . = projenin tamamını git'e eklemek için
+git add -A = projenin tamamını git'e eklemek için
+git add . && git commit -m "commit message" = projenin tamamını git'e ek
+ls -la : gizli dosyaları gösterir.
+
