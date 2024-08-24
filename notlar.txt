@@ -1,0 +1,7 @@
+commit : değişiklikleri kaydeden komut
+branch : projenin birden fazla kullanıcı ile dallanması
+git config --global user.email "aliihsannasli@proton.me"
+git config --global user.name "Ali Ihsan Naslı"
+git config user.email
+git config user.name
+git config 'https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Setup-and-Config
