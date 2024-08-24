@@ -1,4 +1,6 @@
 commit : değişiklikleri kaydeden komut
+Kullanımı : git commit -m "(message)"
+
 branch : projenin birden fazla kullanıcı ile dallanması
 git config --global user.email "aliihsannasli@proton.me"
 git config --global user.name "Ali Ihsan Naslı"
@@ -14,4 +16,13 @@ ls -la : gizli dosyaları gösterir.
 
 gitignore = değişiklikleri görmezden gel.
             'bunun için .gitignore dosyası oluşturulur.
+            google aramada (gitignore template 'pyton' veya 'php') yazarak örnek dosyalara ulaşabiliriz.
+HEAD : güncel konumu gösterir.
+
+git switch branchname -> switchden sonra değiştirmek istedğimiz branch adı yazılır.
+git switch -c branchname
+git branch -d branchname
+
+git merge feat -> feat commit yapan
+
 
