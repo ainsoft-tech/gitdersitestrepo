@@ -12,3 +12,6 @@ git add -A = projenin tamamını git'e eklemek için
 git add . && git commit -m "commit message" = projenin tamamını git'e ek
 ls -la : gizli dosyaları gösterir.
 
+gitignore = değişiklikleri görmezden gel.
+            'bunun için .gitignore dosyası oluşturulur.
+
