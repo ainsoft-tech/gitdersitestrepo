@@ -82,7 +82,7 @@ git reset --hard [commit_id] ->id'si verilen committen önceki commit'leri siler
 git revert [commit_id] ->geriye dönmek istediğimiz commit'ten sonraki commitleri silmeyerek dosyada yapılan değişiklikleri yok sayarak çalışmak istediğimiz commit'e geri döndürür.
 
 git diff -> farkları göster
-git diff HEAD -> güncel değişikliğe göre
+git diff HEAD -> güncel commit değişikliğe göre
 
 
  
