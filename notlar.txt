@@ -19,10 +19,82 @@ gitignore = değişiklikleri görmezden gel.
             google aramada (gitignore template 'pyton' veya 'php') yazarak örnek dosyalara ulaşabiliriz.
 HEAD : güncel konumu gösterir.
 
+//switch ile branch değiştiriyoruz.
 git switch branchname -> switchden sonra değiştirmek istedğimiz branch adı yazılır.
 git switch -c branchname
 git branch -d branchname
 
-git merge feat -> feat commit yapan
+//master branch'inde iken
+git merge feature -> (feature commit yapan) ile commitleri birleştiriyoruz
+git merge --no-ff feature -> (feature commit yapan) ile commitleri birleştiriyoruz
+
+//branchların değişikliklerin çakışması
+conflict : branchların değişikliklerin çakışması
+çakışmaları düzeltmek için fastForwarding
+
+--------------------------------------------------------------------------------------
+Yeni bir proje başlatmak : 
+mkdir [proje dizini]
+git status -> git durumunu görme
+git init   -> git özelliğini ekleme
+touch [dosyaadı][örn: ilkdosya.txt]
+
+* oluşturduğumuz ilk dosyanın bulunduğu dizinde {code .} ile dosyayı VS Code ile açıyoruz.
+* dosya içinde gerekli işlemleri yaptıktan sonra ctrl+s ile kaydet.
+daha sonra
+
+git add . ile değişiklikleri projeye ekliyoruz.
+git commit -m "[message] ile değişiklikleri proje içinde güncelliyoruz.
+
+*başka bir kullanıcı ya da başka bir işlem için yeni 'branch=dallanma' projeye eklenebilir.
+git branch [branchadı]
+git switch [branchadı] mevcut branch'ten diğer branch'e geçme
+
+rm [dosyaadı] -> dosya silme
+rm -rf [dizinadı] -> dizin silme
+
+git merge [branchadı] --> farklı branch'ların düzenlemeleri arasında conflict(=çakışma) olursa 
+                          IDE'de düzeltip daha sonra yeniden 
+                          git add .  ve git commit -m "[message] yapıyoruz.
+--------------------------------------------------------------------
+
+STASH (Saklamak, Depolamak)
+[main] branch dışındaki Farklı bir branch tarafından hem dosya eklenip hem de var olan bir dosya içerisinde değişiklik yapılırsa commit yapılmadıysa diğer branch'da görünür.
+
+git stash -> değişiklikleri diğer branch'ları etkilemeden ilgili branch içinde tutar
+git stash pop -> stasha attığımız değişikliği geri alma.
+git stash list -> güncel stash listesini verir.
+git stash apply [stashadı][örn:stash@{0}
+git stash clear -> tüm stash'leri siler.
+
+
+git restore [dosyaadı] -> commit yapmadan önce bir dosya içindeki değişiklikleri geri alır.
+---------------------------------------------------------------------------------------
+
+CHECKOUT
+
+git checkout [commit_id] -> değişiklik yapıp commit ettikten sonra işlemi geri alıp önceki bir commmit'e geçmek.
+
+-ya da yeni branch açarak önceki commit'e dönebiliriz
+
+git reset [commit_id] -> commitleri silerek id'sini verdiğimiz commit'e döndürür.
+git reset --hard [commit_id] ->id'si verilen committen önceki commit'leri siler ve dosyadaki değişiklikleri de siler.
+git revert [commit_id] ->geriye dönmek istediğimiz commit'ten sonraki commitleri silmeyerek dosyada yapılan değişiklikleri yok sayarak çalışmak istediğimiz commit'e geri döndürür.
+
+git diff -> farkları göster
+git diff HEAD -> güncel değişikliğe göre
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 
