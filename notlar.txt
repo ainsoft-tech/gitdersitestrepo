@@ -95,6 +95,16 @@ git rebase master -> feat branch'ta iken bu şekilde çalıştırıyoruz.
 ------------------------------------
 
 github
+yeni depo açtıktan sonra
+echo "# gitdersitestrepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ainsoft-tech/gitdersitestrepo.git
+git push -u origin main
+
+bunlardan şu üçü daha çok kullanılacak.
 git remote add origin ["github üzerindeki bizim depomuz]
 git branch -M main
 git push -u origin main
