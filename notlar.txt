@@ -107,7 +107,9 @@ git push -u origin main
 bunlardan şu üçü daha çok kullanılacak.
 git remote add origin ["github üzerindeki bizim depomuz]
 git branch -M main
-git push -u origin main
+git push -u origin main -> bu komutu ilk defa kullandıktan sonra 
+git push ile kısaca komutla gönderebiliriz.
+
 
 
 
