@@ -80,9 +80,22 @@ git checkout [commit_id] -> değişiklik yapıp commit ettikten sonra işlemi ge
 git reset [commit_id] -> commitleri silerek id'sini verdiğimiz commit'e döndürür.
 git reset --hard [commit_id] ->id'si verilen committen önceki commit'leri siler ve dosyadaki değişiklikleri de siler.
 git revert [commit_id] ->geriye dönmek istediğimiz commit'ten sonraki commitleri silmeyerek dosyada yapılan değişiklikleri yok sayarak çalışmak istediğimiz commit'e geri döndürür.
+------------------------
 
 git diff -> farkları göster
 git diff HEAD -> güncel commit değişikliğe göre
+git diff [karşılaştırmak istediğimiz birinci_commit_id] [karşılaştırmak istediğimiz ikinci_commit_id]
+-------------------------------
+
+git rebase -> farklı branchlar tarafından yapılan merge'leri sıralamak,hizalamak.
+git logları tarihi sırası değişmiş oluyor.
+
+git switch feat
+git rebase master -> feat branch'ta iken bu şekilde çalıştırıyoruz.
+
+
+
+
 
 
  
