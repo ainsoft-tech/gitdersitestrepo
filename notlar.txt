@@ -111,7 +111,8 @@ git push -u origin main -> bu komutu ilk defa kullandıktan sonra
 git push ile kısaca komutla gönderebiliriz.
 
 
-
+----ÖNEMLİ NOT-----
+hithub depomuzun adresinin başına ["vscode.dev/"] eklersek depomuzda online olarak düzenleme yapabiliriz. //Bu düzenleme de bu şekilde yapıldı.
 
  
 
