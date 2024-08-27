@@ -92,9 +92,12 @@ git logları tarihi sırası değişmiş oluyor.
 
 git switch feat
 git rebase master -> feat branch'ta iken bu şekilde çalıştırıyoruz.
+------------------------------------
 
-
-
+github
+git remote add origin ["github üzerindeki bizim depomuz]
+git branch -M main
+git push -u origin main
 
 
 
