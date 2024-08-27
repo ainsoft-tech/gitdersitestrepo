@@ -1,1 +1,3 @@
 ikinci test dosyası
+
+ikinci satır yazıldı.
