@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 ikinci test dosyası
 
 ikinci satır yazıldı.
-=======
-ikinci
-test
-dosyası
->>>>>>> master
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 commit : değişiklikleri kaydeden komut
 Kullanımı : git commit -m "(message)"
 
@@ -130,3 +131,134 @@ git pull -> bul, getir, uygula.
 
 
 
+=======
+commit : değişiklikleri kaydeden komut
+Kullanımı : git commit -m "(message)"
+
+branch : projenin birden fazla kullanıcı ile dallanması
+git config --global user.email "aliihsannasli@proton.me"
+git config --global user.name "Ali Ihsan Naslı"
+git config user.email
+git config user.name
+git config 'https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Setup-and-Config
+git status = güncel git durumunu gösterir.
+git init = git projeyi başlatmak için
+git add . = projenin tamamını git'e eklemek için
+git add -A = projenin tamamını git'e eklemek için
+git add . && git commit -m "commit message" = projenin tamamını git'e ek
+ls -la : gizli dosyaları gösterir.
+
+gitignore = değişiklikleri görmezden gel.
+            'bunun için .gitignore dosyası oluşturulur.
+            google aramada (gitignore template 'pyton' veya 'php') yazarak örnek dosyalara ulaşabiliriz.
+HEAD : güncel konumu gösterir.
+
+//switch ile branch değiştiriyoruz.
+git switch branchname -> switchden sonra değiştirmek istedğimiz branch adı yazılır.
+git switch -c branchname
+git branch -d branchname
+
+//master branch'inde iken
+git merge feature -> (feature commit yapan) ile commitleri birleştiriyoruz
+git merge --no-ff feature -> (feature commit yapan) ile commitleri birleştiriyoruz
+
+//branchların değişikliklerin çakışması
+conflict : branchların değişikliklerin çakışması
+çakışmaları düzeltmek için fastForwarding
+
+--------------------------------------------------------------------------------------
+Yeni bir proje başlatmak : 
+mkdir [proje dizini]
+git status -> git durumunu görme
+git init   -> git özelliğini ekleme
+touch [dosyaadı][örn: ilkdosya.txt]
+
+* oluşturduğumuz ilk dosyanın bulunduğu dizinde {code .} ile dosyayı VS Code ile açıyoruz.
+* dosya içinde gerekli işlemleri yaptıktan sonra ctrl+s ile kaydet.
+daha sonra
+
+git add . ile değişiklikleri projeye ekliyoruz.
+git commit -m "[message] ile değişiklikleri proje içinde güncelliyoruz.
+
+*başka bir kullanıcı ya da başka bir işlem için yeni 'branch=dallanma' projeye eklenebilir.
+git branch [branchadı]
+git switch [branchadı] mevcut branch'ten diğer branch'e geçme
+
+rm [dosyaadı] -> dosya silme
+rm -rf [dizinadı] -> dizin silme
+
+git merge [branchadı] --> farklı branch'ların düzenlemeleri arasında conflict(=çakışma) olursa 
+                          IDE'de düzeltip daha sonra yeniden 
+                          git add .  ve git commit -m "[message] yapıyoruz.
+--------------------------------------------------------------------
+
+STASH (Saklamak, Depolamak)
+[main] branch dışındaki Farklı bir branch tarafından hem dosya eklenip hem de var olan bir dosya içerisinde değişiklik yapılırsa commit yapılmadıysa diğer branch'da görünür.
+
+git stash -> değişiklikleri diğer branch'ları etkilemeden ilgili branch içinde tutar
+git stash pop -> stasha attığımız değişikliği geri alma.
+git stash list -> güncel stash listesini verir.
+git stash apply [stashadı][örn:stash@{0}
+git stash clear -> tüm stash'leri siler.
+
+
+git restore [dosyaadı] -> commit yapmadan önce bir dosya içindeki değişiklikleri geri alır.
+---------------------------------------------------------------------------------------
+
+CHECKOUT
+
+git checkout [commit_id] -> değişiklik yapıp commit ettikten sonra işlemi geri alıp önceki bir commmit'e geçmek.
+
+-ya da yeni branch açarak önceki commit'e dönebiliriz
+
+git reset [commit_id] -> commitleri silerek id'sini verdiğimiz commit'e döndürür.
+git reset --hard [commit_id] ->id'si verilen committen önceki commit'leri siler ve dosyadaki değişiklikleri de siler.
+git revert [commit_id] ->geriye dönmek istediğimiz commit'ten sonraki commitleri silmeyerek dosyada yapılan değişiklikleri yok sayarak çalışmak istediğimiz commit'e geri döndürür.
+------------------------
+
+git diff -> farkları göster
+git diff HEAD -> güncel commit değişikliğe göre
+git diff [karşılaştırmak istediğimiz birinci_commit_id] [karşılaştırmak istediğimiz ikinci_commit_id]
+-------------------------------
+
+git rebase -> farklı branchlar tarafından yapılan merge'leri sıralamak,hizalamak.
+git logları tarihi sırası değişmiş oluyor.
+
+git switch feat
+git rebase master -> feat branch'ta iken bu şekilde çalıştırıyoruz.
+------------------------------------
+
+github
+yeni depo açtıktan sonra
+echo "# gitdersitestrepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ainsoft-tech/gitdersitestrepo.git
+git push -u origin main
+
+bunlardan şu üçü daha çok kullanılacak.
+git remote add origin ["github üzerindeki bizim depomuz]
+git branch -M main
+git push -u origin main -> bu komutu ilk defa kullandıktan sonra 
+git push ile kısaca komutla gönderebiliriz.
+
+
+----ÖNEMLİ NOT-----
+hithub depomuzun adresinin başına ["vscode.dev/"] eklersek depomuzda online olarak düzenleme yapabiliriz. //Bu düzenleme de bu şekilde yapıldı.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> bdc65e676c6ec34aa29d6996b3f0a1080b2baace
