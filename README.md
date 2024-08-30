@@ -99,7 +99,7 @@ STASH (Saklamak, Depolamak)
 git stash -> değişiklikleri diğer branch'ları etkilemeden ilgili branch içinde tutar
 git stash pop -> stasha attığımız değişikliği geri alma.
 git stash list -> güncel stash listesini verir.
-git stash apply [stashadı][örn:stash@{0}
+git stash apply [stashadı][örn:stash@{0}]
 git stash clear -> tüm stash'leri siler.
 
 
