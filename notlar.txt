@@ -49,6 +49,7 @@ git commit -m "[message] ile değişiklikleri proje içinde güncelliyoruz.
 *başka bir kullanıcı ya da başka bir işlem için yeni 'branch=dallanma' projeye eklenebilir.
 git branch [branchadı]
 git switch [branchadı] mevcut branch'ten diğer branch'e geçme
+git branch -r -> origin branch'leri gösterir.
 
 rm [dosyaadı] -> dosya silme
 rm -rf [dizinadı] -> dizin silme
@@ -114,7 +115,9 @@ git push ile kısaca komutla gönderebiliriz.
 hithub depomuzun adresinin başına ["vscode.dev/"] eklersek depomuzda online olarak düzenleme yapabiliriz. //Bu düzenleme de bu şekilde yapıldı.
 
 
- 
+git fetch origin [branch_adı]-> bul, getir.
+git pull -> bul, getir, uygula.
+
 
 
 
